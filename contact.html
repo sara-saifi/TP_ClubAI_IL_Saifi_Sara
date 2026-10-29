@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club AI - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Club AI</h1>
+    <p>Journée de découverte - Faculté des Sciences</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="ateliers.html">Ateliers</a>
+    <a href="programme.html">Programme</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h2>Contactez-nous</h2>
+    <p>Formulaire de test : aucune donnée n'est envoyée ni enregistrée.</p>
+
+    <form action="#" method="get">
+
+      <fieldset>
+        <legend>Vos informations</legend>
+
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="tel">Téléphone</label>
+        <input type="tel" id="tel" name="telephone">
+
+        <label for="date">Date souhaitée</label>
+        <input type="date" id="date" name="date_souhaitee">
+      </fieldset>
+
+      <fieldset>
+        <legend>Votre choix</legend>
+
+        <label for="filiere">Filière</label>
+        <select id="filiere" name="filiere">
+          <option value="IL">IL</option>
+          <option value="ADIA">ADIA</option>
+          <option value="IISE">IISE</option>
+        </select>
+
+        <label for="atelier">Atelier préféré</label>
+        <select id="atelier" name="atelier">
+          <option value="assistant">Assistant pédagogique</option>
+          <option value="qualite">Qualité du code</option>
+          <option value="prototypage">Prototypage d'application</option>
+        </select>
+
+        <p>Niveau</p>
+        <input type="radio" id="debutant" name="niveau" value="debutant" checked>
+        <label for="debutant" class="inline">Débutant</label>
+        <input type="radio" id="intermediaire" name="niveau" value="intermediaire">
+        <label for="intermediaire" class="inline">Intermédiaire</label>
+
+        <p>Centres d'intérêt</p>
+        <input type="checkbox" id="ia" name="interets" value="IA">
+        <label for="ia" class="inline">IA</label>
+        <input type="checkbox" id="web" name="interets" value="Web">
+        <label for="web" class="inline">Web</label>
+        <input type="checkbox" id="donnees" name="interets" value="Donnees">
+        <label for="donnees" class="inline">Données</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Votre message</legend>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+      </fieldset>
+
+      <button type="submit">Envoyer</button>
+      <button type="reset">Effacer</button>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>Réalisé par NOM Prénom - Filière IL</p>
+  </footer>
+
+</body>
+</html>
